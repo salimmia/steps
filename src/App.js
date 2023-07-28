@@ -12,16 +12,17 @@ export default function App() {
 
   function handlePrevious() {
     // alert("Previous");
-    if (step > 1) setState((step) => step - 1);
+    if (step > 1) setState((s) => s - 1);
   }
 
   function handleNext() {
     // alert("Next");
-    if (step < 3) setState((setp) => step + 1);
+    if (step < 3) setState((s) => s + 1);
   }
 
   function handleIsOpen() {
-    setIsOpen(!isOpen);
+    setIsOpen((s) => !s);
+    // setIsOpen((s) => !s);
     // setState(1);
   }
 
